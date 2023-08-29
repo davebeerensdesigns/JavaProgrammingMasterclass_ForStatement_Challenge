@@ -1,13 +1,10 @@
 public class Main {
     public static void main(String[] args) {
         int primeCounter = 0;
-        for(int i = 50; i <= 1000; i++){
+        for(int i = 50; primeCounter < 3 && i <= 1000; i++){
             if(isPrime(i)){
-                System.out.println(i + " is a prime number");
+                System.out.println("Number " + i + " is a prime number");
                 primeCounter++;
-            }
-            if(primeCounter == 3){
-                break;
             }
         }
     }
